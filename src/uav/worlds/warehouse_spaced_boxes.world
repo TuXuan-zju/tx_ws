@@ -1,0 +1,311 @@
+<?xml version='1.0' encoding='utf-8'?>
+<sdf version="1.6">
+  <world name="default">
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+    <include>
+      <uri>model://sun</uri>
+    </include>
+    <include>
+      <uri>model://three_layer_shelf</uri>
+      <name>shelf_0</name>
+      <pose>3.0 3.0 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf0_box0_0</name>
+      <pose>2.5 3.0 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf0_box0_1</name>
+      <pose>3.0 3.0 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf0_box0_2</name>
+      <pose>3.5 3.0 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf0_box1_0</name>
+      <pose>2.5 3.0 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf0_box1_1</name>
+      <pose>3.0 3.0 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf0_box1_2</name>
+      <pose>3.5 3.0 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf0_box2_0</name>
+      <pose>2.5 3.0 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf0_box2_1</name>
+      <pose>3.0 3.0 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf0_box2_2</name>
+      <pose>3.5 3.0 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://three_layer_shelf</uri>
+      <name>shelf_1</name>
+      <pose>5.5 3.0 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf1_box0_0</name>
+      <pose>5.0 3.0 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf1_box0_1</name>
+      <pose>5.5 3.0 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf1_box0_2</name>
+      <pose>6.0 3.0 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf1_box1_0</name>
+      <pose>5.0 3.0 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf1_box1_1</name>
+      <pose>5.5 3.0 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf1_box1_2</name>
+      <pose>6.0 3.0 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf1_box2_0</name>
+      <pose>5.0 3.0 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf1_box2_1</name>
+      <pose>5.5 3.0 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf1_box2_2</name>
+      <pose>6.0 3.0 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://three_layer_shelf</uri>
+      <name>shelf_2</name>
+      <pose>3.0 5.5 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf2_box0_0</name>
+      <pose>2.5 5.5 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf2_box0_1</name>
+      <pose>3.0 5.5 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf2_box0_2</name>
+      <pose>3.5 5.5 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf2_box1_0</name>
+      <pose>2.5 5.5 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf2_box1_1</name>
+      <pose>3.0 5.5 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf2_box1_2</name>
+      <pose>3.5 5.5 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf2_box2_0</name>
+      <pose>2.5 5.5 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf2_box2_1</name>
+      <pose>3.0 5.5 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf2_box2_2</name>
+      <pose>3.5 5.5 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://three_layer_shelf</uri>
+      <name>shelf_3</name>
+      <pose>5.5 5.5 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf3_box0_0</name>
+      <pose>5.0 5.5 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf3_box0_1</name>
+      <pose>5.5 5.5 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf3_box0_2</name>
+      <pose>6.0 5.5 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf3_box1_0</name>
+      <pose>5.0 5.5 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf3_box1_1</name>
+      <pose>5.5 5.5 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf3_box1_2</name>
+      <pose>6.0 5.5 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf3_box2_0</name>
+      <pose>5.0 5.5 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf3_box2_1</name>
+      <pose>5.5 5.5 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf3_box2_2</name>
+      <pose>6.0 5.5 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://three_layer_shelf</uri>
+      <name>shelf_4</name>
+      <pose>3.0 8.0 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf4_box0_0</name>
+      <pose>2.5 8.0 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf4_box0_1</name>
+      <pose>3.0 8.0 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf4_box0_2</name>
+      <pose>3.5 8.0 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf4_box1_0</name>
+      <pose>2.5 8.0 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf4_box1_1</name>
+      <pose>3.0 8.0 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf4_box1_2</name>
+      <pose>3.5 8.0 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf4_box2_0</name>
+      <pose>2.5 8.0 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf4_box2_1</name>
+      <pose>3.0 8.0 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf4_box2_2</name>
+      <pose>3.5 8.0 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://three_layer_shelf</uri>
+      <name>shelf_5</name>
+      <pose>5.5 8.0 0.0 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf5_box0_0</name>
+      <pose>5.0 8.0 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf5_box0_1</name>
+      <pose>5.5 8.0 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf5_box0_2</name>
+      <pose>6.0 8.0 0.6 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf5_box1_0</name>
+      <pose>5.0 8.0 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf5_box1_1</name>
+      <pose>5.5 8.0 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf5_box1_2</name>
+      <pose>6.0 8.0 1.05 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf5_box2_0</name>
+      <pose>5.0 8.0 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf5_box2_1</name>
+      <pose>5.5 8.0 1.5 0.0 0.0 0.0</pose>
+    </include>
+    <include>
+      <uri>model://simple_cardboard_box</uri>
+      <name>shelf5_box2_2</name>
+      <pose>6.0 8.0 1.5 0.0 0.0 0.0</pose>
+    </include>
+  </world>
+</sdf>

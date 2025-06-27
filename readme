@@ -1,0 +1,13 @@
+#使用方法
+#1、启动px4 需要电脑里面装好环境 
+PX4_SIM_MODEL=none make px4_sitl_default none
+#2、启动uav cd your catin_ws/
+source devel/setup.bash
+roslaunch uav px4_intercept_uav.launch
+#3、打开Qground 开始调参 需提前安装好
+./QGroundControl.AppImage 
+#4、重新将参数设置为iris默认办法
+1、在px4启动命令行里面 param set SYS_AUTOCONFIG 1
+2、在px4目录下再次启动完成后退出 PX4_SIM_MODEL=iris make px4_sitl_default gazebo
+#5、如果启动时总是报错安全问题请反复修改 uav.launch里面的 z数值 推荐数值 0.045 0.05 0.051 0.06 0.1 0.5 玄学 
+#本项目代码主要位于uav功能包中 其他包均为插件

@@ -1,0 +1,276 @@
+<sdf version='1.7'>
+  <model name='uav'>
+    <link name='base_link'>
+      <inertial>
+        <pose>0.00854 -4e-06 0.015696 0 -0 0</pose>
+        <mass>0.961089</mass>
+        <inertia>
+          <ixx>0.0014967</ixx>
+          <ixy>-2.95523e-07</ixy>
+          <ixz>2.17071e-05</ixz>
+          <iyy>0.00522903</iyy>
+          <iyz>-4.47148e-08</iyz>
+          <izz>0.00639738</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://uav/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__camera_link_collision_1'>
+        <pose>0.15532 0.001716 -0.001374 0 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://uav/meshes/camera_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <collision name='base_link_fixed_joint_lump__lidar_link_collision_2'>
+        <pose>0.080904 0 0.074681 0 0.2618 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://uav/meshes/lidar_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='base_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://uav/meshes/base_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__camera_link_visual_1'>
+        <pose>0.15532 0.001716 -0.001374 0 1.5708 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://uav/meshes/camera_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+      <visual name='base_link_fixed_joint_lump__lidar_link_visual_2'>
+        <pose>0.080904 0 0.074681 0 0.2618 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://uav/meshes/lidar_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='propeller_1' type='revolute'>
+      <pose relative_to='base_link'>0.081317 0.081317 -0.0264 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>propeller_1_link</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='propeller_1_link'>
+      <pose relative_to='propeller_1'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0 -0 0.003491 0 -0 0</pose>
+        <mass>0.0012983</mass>
+        <inertia>
+          <ixx>5.4247e-07</ixx>
+          <ixy>-3.2114e-14</ixy>
+          <ixz>8.3771e-14</ixz>
+          <iyy>5.4246e-07</iyy>
+          <iyz>5.8084e-15</iyz>
+          <izz>1.0787e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='propeller_1_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://uav/meshes/propeller_1_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='propeller_1_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://uav/meshes/propeller_1_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='propeller_2' type='revolute'>
+      <pose relative_to='base_link'>0.081317 -0.081317 -0.0264 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>propeller_2_link</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='propeller_2_link'>
+      <pose relative_to='propeller_2'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>-0 -0 0.003491 0 -0 0</pose>
+        <mass>0.0012983</mass>
+        <inertia>
+          <ixx>5.4247e-07</ixx>
+          <ixy>-1.5213e-13</ixy>
+          <ixz>6.0754e-14</ixz>
+          <iyy>5.4246e-07</iyy>
+          <iyz>2.55e-14</iyz>
+          <izz>1.0787e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='propeller_2_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://uav/meshes/propeller_2_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='propeller_2_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://uav/meshes/propeller_2_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='propeller_3' type='revolute'>
+      <pose relative_to='base_link'>-0.081317 -0.081317 -0.0264 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>propeller_3_link</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='propeller_3_link'>
+      <pose relative_to='propeller_3'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 -0 0.003491 0 -0 0</pose>
+        <mass>0.0012983</mass>
+        <inertia>
+          <ixx>5.4246e-07</ixx>
+          <ixy>1.5689e-13</ixy>
+          <ixz>4.6336e-14</ixz>
+          <iyy>5.4246e-07</iyy>
+          <iyz>-1.3257e-14</iyz>
+          <izz>1.0787e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='propeller_3_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://uav/meshes/propeller_3_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='propeller_3_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://uav/meshes/propeller_3_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <joint name='propeller_4' type='revolute'>
+      <pose relative_to='base_link'>-0.081317 0.081317 -0.0264 0 -0 0</pose>
+      <parent>base_link</parent>
+      <child>propeller_4_link</child>
+      <axis>
+        <xyz>0 0 -1</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+      </axis>
+    </joint>
+    <link name='propeller_4_link'>
+      <pose relative_to='propeller_4'>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose>0 -0 0.003491 0 -0 0</pose>
+        <mass>0.00129831</mass>
+        <inertia>
+          <ixx>5.42465e-07</ixx>
+          <ixy>5.45914e-16</ixy>
+          <ixz>-6.31179e-16</ixz>
+          <iyy>5.42465e-07</iyy>
+          <iyz>8.03848e-14</iyz>
+          <izz>1.07868e-06</izz>
+        </inertia>
+      </inertial>
+      <collision name='propeller_4_link_collision'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://uav/meshes/propeller_4_link.STL</uri>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name='propeller_4_link_visual'>
+        <pose>0 0 0 0 -0 0</pose>
+        <geometry>
+          <mesh>
+            <scale>1 1 1</scale>
+            <uri>model://uav/meshes/propeller_4_link.STL</uri>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+    <frame name='camera' attached_to='base_link'>
+      <pose>0.15532 0.001716 -0.001374 3.14159 1.57079 3.14159</pose>
+    </frame>
+    <frame name='camera_link' attached_to='camera'/>
+    <frame name='lidar' attached_to='base_link'>
+      <pose>0.080904 0 0.074681 0 0.2618 0</pose>
+    </frame>
+    <frame name='lidar_link' attached_to='lidar'/>
+  </model>
+</sdf>

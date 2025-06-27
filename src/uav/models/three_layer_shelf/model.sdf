@@ -1,0 +1,175 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <model name="three_layer_shelf">
+    <static>true</static>
+
+    <link name="shelf_1">
+      <pose>0 0 0.2 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.4 0.05</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.4 0.05</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8 0.6 0.3 1</ambient>
+          <diffuse>0.8 0.6 0.3 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+
+    <link name="shelf_2">
+      <pose>0 0 0.7 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.4 0.05</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.4 0.05</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8 0.6 0.3 1</ambient>
+          <diffuse>0.8 0.6 0.3 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+
+    <link name="shelf_3">
+      <pose>0 0 1.2 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <box>
+            <size>2.0 0.4 0.05</size>
+          </box>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <box>
+            <size>2.0 0.4 0.05</size>
+          </box>
+        </geometry>
+        <material>
+          <ambient>0.8 0.6 0.3 1</ambient>
+          <diffuse>0.8 0.6 0.3 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+
+    <link name="post_1">
+      <pose>-0.975 -0.17500000000000002 0.7 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.025</radius>
+            <length>1.4</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>0.025</radius>
+            <length>1.4</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.4 0.4 0.4 1</ambient>
+          <diffuse>0.4 0.4 0.4 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+
+    <link name="post_2">
+      <pose>-0.975 0.17500000000000002 0.7 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.025</radius>
+            <length>1.4</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>0.025</radius>
+            <length>1.4</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.4 0.4 0.4 1</ambient>
+          <diffuse>0.4 0.4 0.4 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+
+    <link name="post_3">
+      <pose>0.975 -0.17500000000000002 0.7 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.025</radius>
+            <length>1.4</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>0.025</radius>
+            <length>1.4</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.4 0.4 0.4 1</ambient>
+          <diffuse>0.4 0.4 0.4 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+
+    <link name="post_4">
+      <pose>0.975 0.17500000000000002 0.7 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <cylinder>
+            <radius>0.025</radius>
+            <length>1.4</length>
+          </cylinder>
+        </geometry>
+      </collision>
+      <visual name="visual">
+        <geometry>
+          <cylinder>
+            <radius>0.025</radius>
+            <length>1.4</length>
+          </cylinder>
+        </geometry>
+        <material>
+          <ambient>0.4 0.4 0.4 1</ambient>
+          <diffuse>0.4 0.4 0.4 1</diffuse>
+        </material>
+      </visual>
+    </link>
+    
+</model>
+</sdf>

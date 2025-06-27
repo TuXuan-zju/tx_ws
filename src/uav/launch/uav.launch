@@ -1,0 +1,31 @@
+<launch>
+    <!-- 设置 GAZEBO_MODEL_PATH 指向包含 uav.sdf 和 meshes 的目录 -->
+    <env name="GAZEBO_MODEL_PATH" value="/home/tuxuan/A-Program/tx_ws/src/uav/models" />
+    <!-- 指定仿真世界 -->
+    <arg name="world_file" default="$(find uav)/worlds/warehouse_spaced_boxes.world" />
+    <!-- <node pkg="tf" type="static_transform_publisher" name="world_to_base_link_tf" args="0 0 0 0
+    0 0 world base_link 100" /> -->
+    <!-- 启动 Gazebo 并加载 world -->
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+        <arg name="world_name" value="$(arg world_file)" />
+        <arg name="verbose" value="true" />
+        <arg name="use_sim_time" value="true" />
+        <arg name="gui" value="true" />
+    </include>
+    <!-- 加载自定义无人机模型 -->
+    <!-- <param name="robot_description" command="$(find xacro)/xacro
+    '/home/tuxuan/PX4-Autopilot/Tools/simulation/gazebo-classic/sitl_gazebo-classic/models/plane/plane.sdf'"
+    /> -->
+    <node name="spawn_uav" pkg="gazebo_ros" type="spawn_model"
+        args="-sdf -file /home/tuxuan/A-Program/tx_ws/src/uav/models/uav/uav.sdf -model uav -x 0 -y -0 -z 0.051"
+        output="screen" />
+    <node pkg="tf" type="static_transform_publisher" name="world_to_base_link_tf"
+        args="0 0 0 0 0 0 livox base_link 100" />
+     <include file="$(find mavros)/launch/px4.launch">
+        <arg name="fcu_url" value="udp://:14557@127.0.0.1:14580"/>
+    </include>
+    <node pkg="uav" type="imu_monitor.py" name="imu_monitor" output="screen"/> 
+    <node name="rviz" pkg="rviz" type="rviz"
+        args="-d $(find uav)/rviz/uav.rviz"
+        output="screen" />
+</launch>
